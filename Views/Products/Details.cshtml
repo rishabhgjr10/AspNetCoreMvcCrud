@@ -1,0 +1,13 @@
+﻿@model CrudApp.Models.Product
+
+<h2>Product Details</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <div>Price: @Model.Price</div>
+</div>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p>
